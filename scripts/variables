@@ -1,0 +1,2 @@
+BASE_BOX=leodotcloud/focal64
+OUTPUT_BOX=buildserver.box
