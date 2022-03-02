@@ -9,7 +9,6 @@ OS=$(echo "${OS}" | tr '[:upper:]' '[:lower:]')
 echo "OS: ${OS}"
 
 # These need to be "exported" as they are used in Vagrantfile
-export DOCKER_VERSION=19.03
 export BOX_VERSION=$(cat box_version)
 
 if [ -n "$(git status --porcelain --untracked-files=no)" ]; then

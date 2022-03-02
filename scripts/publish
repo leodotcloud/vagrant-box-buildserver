@@ -10,7 +10,7 @@ source $(dirname $0)/variables
 cd $(dirname $0)/../box
 
 REPO=${REPO:-"leodotcloud"}
-BOX=${BOX:-"buildserver"}
+BOX=${BOX}
 PROVIDER="virtualbox"
 
 echo "Publishing vagrant box"

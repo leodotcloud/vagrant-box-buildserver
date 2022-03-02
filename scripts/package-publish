@@ -13,7 +13,7 @@ echo "Packaging vagrant box"
 vagrant package --output "${OUTPUT_BOX}"
 
 REPO=${REPO:-"leodotcloud"}
-BOX=${BOX:-"buildserver"}
+BOX=${BOX}
 PROVIDER="virtualbox"
 
 echo "Publishing vagrant box"

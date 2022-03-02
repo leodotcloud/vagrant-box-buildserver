@@ -1,2 +1,4 @@
-BASE_BOX=leodotcloud/focal64
-OUTPUT_BOX=buildserver.box
+export GITHUB_REPOSITORY="leodotcloud/vagrant-box-buildserver"
+export BASE_BOX=leodotcloud/jammy64
+export BOX="buildserver"
+export OUTPUT_BOX="${BOX}.box"
