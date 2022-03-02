@@ -4,7 +4,7 @@ cd $(dirname $0)/..
 
 source $(dirname $0)/variables
 
-REMOTE_BOX_VERSION=$(vagrant cloud search --provider virtualbox --json "${BASE_BOX}" |  jq '.[] | select(.name == "'"${BASE_BOX}"'") | .version' | tr -d '"')
+REMOTE_BOX_VERSION=$(vagrant cloud search --provider virtualbox --json "${BASE_BOX}" | jq -r '.[] | select(.name == env.BASE_BOX) | .version')
 
 if grep -q "${REMOTE_BOX_VERSION}" box_version; then
   echo "No new version released by upstream"

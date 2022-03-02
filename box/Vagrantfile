@@ -1,9 +1,8 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-base_box = "leodotcloud/focal64"
+base_box = "leodotcloud/jammy64"
 box_version = ENV.fetch('BOX_VERSION')
-docker_version = ENV.fetch('DOCKER_VERSION')
 
 Vagrant.configure("2") do |config|
   config.vm.box = base_box
@@ -12,9 +11,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.provision "shell" do |s|
     s.path = "customize.sh"
-    s.env = {
-        "DOCKER_VERSION" => docker_version
-    }
   end
 
   config.vm.provision "shell", inline: <<-SHELL

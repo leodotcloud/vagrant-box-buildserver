@@ -5,6 +5,8 @@ if [ -z ${VERSION_SET+x} ];then
     source $(dirname $0)/version
 fi
 
+source $(dirname $0)/variables
+
 cd $(dirname $0)/../box
 
 echo "Running: vagrant destroy"

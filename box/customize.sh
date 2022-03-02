@@ -9,6 +9,7 @@ build-essential \
 libhugetlbfs-dev \
 libsqlite3-dev \
 libssl-dev \
+lldb \
 openjdk-11-jdk
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
