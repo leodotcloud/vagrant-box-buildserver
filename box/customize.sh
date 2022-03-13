@@ -24,5 +24,6 @@ openjdk-11-jdk
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 wget https://services.gradle.org/distributions/gradle-7.3.1-bin.zip -P /tmp && \
-    unzip -j /tmp/gradle-7.3.1-bin.zip gradle-7.3.1/bin/gradle -d /usr/bin && \
+    unzip /tmp/gradle-7.3.1-bin.zip -d /usr/local/bin && \
+    ln -sv /usr/local/bin/gradle-7.3.1/bin/gradle /usr/bin && \
     rm /tmp/gradle-7.3.1-bin.zip
