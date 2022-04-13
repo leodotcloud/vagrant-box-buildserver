@@ -22,6 +22,7 @@ sudo apt-get update &&
     zlib1g-dev \
     libpulse-dev \
     cmake \
+    ninja-build \
     openjdk-11-jdk
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
